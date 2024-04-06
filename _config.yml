@@ -1,0 +1,35 @@
+title:          LIVILER
+description:    "Blog of Liviler"
+url:            "https://liviler.github.io"
+
+author:
+  name:   Liviler Lee
+  url:          #https://liviler.xyz
+  email:  livilerlee@gmail.com
+
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+permalink:      /:year/:title
+
+defaults:
+  -
+    scope: 
+      path: _posts/
+      type: posts
+    values:
+      layout: post
+      author: liviler
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+paginate:       4
+paginate_path:  /blogs/:num
+
+google_analytics: G-82QSKQZY88
+
+disqus: liviler

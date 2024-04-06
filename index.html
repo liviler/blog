@@ -1,0 +1,12 @@
+---
+layout: default 
+title: "Home"
+---
+
+<div class="catalogue">
+  {% for post in site.posts %}
+    {% if post.pinned %}
+      {% include catalogue_item.html pinned='true' %}
+    {% endif %}
+  {% endfor %}
+</div>
