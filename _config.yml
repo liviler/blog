@@ -28,7 +28,7 @@ plugins:
   - jekyll-seo-tag
 
 paginate:       4
-paginate_path:  /blogs/:num
+paginate_path:  /archives/:num
 
 google_analytics: G-82QSKQZY88
 
