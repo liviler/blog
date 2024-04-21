@@ -1,0 +1,58 @@
+.Topcontainer {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    .Topcontents{
+        width: 800px;
+    }
+    .table-of-contents{
+        font-family:"fangsong",$serif-primary;
+        padding: 10px;
+        border-left: 2px solid #efefef;
+        width: 380px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 80px;
+        margin-bottom: 80px;
+        height: fit-content;
+        margin-left: 30px;
+        h2 {
+            color: #1b7eff;;
+        }
+        ul{
+            margin-left: 20px;
+            padding-left: 0px;
+            list-style-type: none;
+            font-size: 14px;
+            line-height: 24px;
+            color: #a7cada;
+            a{
+                color: #005b81;
+                &:hover{
+                    color: #1b7eff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .post-content {
+        .Topcontainer {
+            width: 100%;
+            .Topcontents {
+                width: 100%;
+                float: none;
+                margin: 0 auto;
+            }
+            .table-of-contents {
+                display: none;
+            }
+        }
+    }
+    .table-of-contents {
+        display: none;
+    }
+}
+

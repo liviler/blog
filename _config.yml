@@ -21,6 +21,8 @@ defaults:
     values:
       layout: post
       author: liviler
+      toc: true
+      comment: true
 
 plugins:
   - jekyll-feed
